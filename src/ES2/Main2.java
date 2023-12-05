@@ -1,9 +1,6 @@
 package ES2;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main2 {
     public static void main(String[] args) {
@@ -19,6 +16,9 @@ public class Main2 {
     }
 
     private static void crealistaNumeriInvertiti(List<Integer> listaNumeriInvertiti) {
+        Collections.reverse(listaNumeriInvertiti);
+        listaNumeriInvertiti.addAll(new ArrayList<>(listaNumeriInvertiti));
+        System.out.println("Lista numeri invertiti: " + listaNumeriInvertiti);
     }
 
     private static void generaListaCasuale(List<Integer> listaCasuale, int numberChoose) {
@@ -28,6 +28,18 @@ public class Main2 {
             listaCasuale.add(random.nextInt(101));
         }
         System.out.println("Lista casuale:" + listaCasuale);
+        numberP (listaCasuale);
+        Collections.sort(listaCasuale);
+        System.out.println("Lista ordinata" + listaCasuale);
 
     }
-}
+
+    private static void numberP(List<Integer> listaCasuale) {
+        System.out.println("Ecco i numeri pari:");
+        for (int i = 0; i < listaCasuale.size(); i++) {
+            if (i % 2 == 0) {
+                System.out.println(listaCasuale.get(i));
+               }
+            }
+        }
+    }
