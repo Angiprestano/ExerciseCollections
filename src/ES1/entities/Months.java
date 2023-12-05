@@ -1,4 +1,4 @@
-package ES1;
+package ES1.entities;
 
 public class Months {
     private int n;

@@ -1,4 +1,6 @@
-import ES1.Months;
+package ES1.entities;
+
+import ES1.entities.Months;
 
 import java.util.HashSet;
 import java.util.Set;
