@@ -1,17 +1,18 @@
+import ES1.Months;
+
+import java.util.HashSet;
+import java.util.Set;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Invio with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        // Press Maiusc+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Maiusc+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        Months Dicembre = new Months(31 , "Dicembre");
+        Months Gennaio = new Months(31, "Gennaio");
+        Months Febbraio = new Months(29, "Febbraio");
+       Set<Months> monthsSet = new HashSet<>();
+       monthsSet.add(Dicembre);
+       monthsSet.add(Gennaio);
+       monthsSet.add(Febbraio);
     }
 }
