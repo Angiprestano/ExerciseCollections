@@ -20,6 +20,14 @@ public class Months {
         this.words = words;
     }
 
+    @Override
+    public String toString() {
+        return "Months {" +
+                "n= " + n +
+                ", words='" + words + '\'' +
+                '}';
+    }
+
     public Months(int n, String words) {
         this.n = n;
         this.words = words;

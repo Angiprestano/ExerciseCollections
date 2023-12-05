@@ -14,5 +14,8 @@ public class Main {
        monthsSet.add(Dicembre);
        monthsSet.add(Gennaio);
        monthsSet.add(Febbraio);
+       System.out.println("Mese:" + " " + Dicembre);
+       System.out.println("Il numero delle parole è:" + " " + Dicembre.getWords() + " " + Dicembre.getWords());
+       System.out.println();
     }
 }
